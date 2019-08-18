@@ -2,6 +2,8 @@
 
 Use QGis Script runner plugin to run render_tiles5.py
 
+Scipt uses fixed metatiling scheme, so metatile bounds are always the same independed of export bounds. This helps to fix some cut labels or cut symbols, which may appear at metatile bounds.
+
 ## Usage ##
 
  The selected object will be used for export bounds. You can edit render_tiles5.py to alter script behaviour. Tiles will be 256x256 24 bit PNG
