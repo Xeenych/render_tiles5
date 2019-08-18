@@ -46,7 +46,7 @@ class DirectoryWriter:
         dirPath = '%s/%s' % (self.output.absoluteFilePath(), path)
         QDir().mkpath(dirPath)
         #print("DirectoryWriter.writeTile")
-        #print(dirPath)
+        print(dirPath)
         image.save('%s/%s.%s' % (dirPath, tile.y, format.lower()), format, quality)
 
     def finalize(self):
